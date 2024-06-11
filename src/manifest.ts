@@ -17,10 +17,7 @@ const manifest: Manifest.WebExtensionManifest = {
   icons: {
     '128': 'icon-128.png',
   },
-  permissions: [
-    "storage",
-    "tabs"
-  ],
+	permissions: ["scripting", "background", "tabs", "activeTab", "storage", "contextMenus", "declarativeContent", "declarativeNetRequest", "declarativeNetRequestFeedback"],
   content_scripts: [{
     matches: ["*://youtube.com/*", "*://www.youtube.com/*"],
     js: ['src/pages/content/index.js'],

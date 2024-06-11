@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { CommonProvider } from '../background/context';
-import Scraper from './Scraper';
+import GetSpeech from './getSpeech';
 import './style.css'
 
 function init() {
@@ -16,7 +16,7 @@ function init() {
 
   root.render(<div className="fixed left-[540px] top-[100px] z-[9999] w-[300px]">
     <CommonProvider>
-      <Scraper />
+      <GetSpeech />
     </CommonProvider>
   </div>);
 }

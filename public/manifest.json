@@ -15,8 +15,15 @@
     "128": "icon-128.png"
   },
   "permissions": [
+    "scripting",
+    "background",
+    "tabs",
+    "activeTab",
     "storage",
-    "tabs"
+    "contextMenus",
+    "declarativeContent",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
   ],
   "content_scripts": [
     {
